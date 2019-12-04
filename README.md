@@ -10,6 +10,6 @@ model using Tensorboard
 ```properties
 
 docker build -t jupyter-keras .
-docker run -d  -v /$(pwd)/:/home/jovyan/work     -p 8888:8888 -p 6006:6006  jupyter-keras  start-notebook.sh --NotebookApp.token=''
+docker run -d  -v /$(pwd)/:/home/jovyan/work -p 8888:8888 -p 6006:6006  jupyter-keras  start-notebook.sh --NotebookApp.token=''
 
 ```
